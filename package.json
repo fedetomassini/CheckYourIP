@@ -1,6 +1,6 @@
 {
-  "name": "myip",
-  "version": "0.0.0",
+  "name": "checkyourip",
+  "version": "1.0.1",
   "scripts": {
     "dev": "react-scripts start"
   },
