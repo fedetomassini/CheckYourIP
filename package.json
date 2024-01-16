@@ -1,22 +1,28 @@
 {
   "name": "checkyourip",
-  "version": "1.0.1",
+  "version": "1.1",
+  "type": "module",
   "scripts": {
-    "dev": "react-scripts start"
+    "start": "vite",
+    "dev": "vite",
+    "devhost": "vite --host",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
+    "react-icons": "^5.0.1",
     "styled-components": "^6.0.2",
-    "sweetalert2": "^11.7.12"
+    "sweetalert2": "^11.7.12",
+    "vite": "^5.0.11",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-tsconfig-paths": "^4.2.3"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react": "^18.2.48"
   },
   "browserslist": {
     "production": [

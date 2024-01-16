@@ -8,47 +8,53 @@ export const WebLoaderGif = styled.img`
     margin-right: auto;
 `
 
-export const IPContainer = styled.div`
+export const UserDataContainer = styled.div`
     width: fit-content;
-    height: 225px;
     display: grid;
-    place-items: center;
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Share Tech Mono', monospace !important;
     color: ${WebColors.DefaultTextColor};
-    border: 5px double ${WebColors.IpContainerBorderColor};
+    border: 5px dashed ${WebColors.IpContainerBorderColor};
     background-color: ${WebColors.IPContainerBackgroundColor};
+    &:hover{
+        border-color: ${WebColors.HoverTextColor};
+    }
 `
 
-export const UserIP = styled.span`
-    padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -75px;
-    font-size: 26pt;
-    border-radius: 5px;
-    background-color: ${WebColors.UserIPBackgroundColor};
+export const UserData = styled.span`
+    font-size: 14pt;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: ${WebColors.CustomTitleColor}
+
 `
 
-export const CustomTitle = styled.h1`
-    font-size: 26pt;
-    margin-top: -25px;
+export const Title = styled.h1`
+    font-size: 22pt;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 10px;
     color: ${WebColors.CustomTitleColor};
+    @media (max-width: 420px) {
+        gap: 1px;
+    }
 `
 
 export const Advise = styled.p`
     text-align: center;
     color: ${WebColors.AdviseTextColor};
     font-family: 'Share Tech Mono', monospace !important;
-    margin-top: 50px;
+    margin-top: 200px;
     margin-left: 50px;
     margin-right: 50px;
     @media screen and (max-width: 540px){
-        margin-left: 30px !important;
-        margin-right: 30px !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 `
 
